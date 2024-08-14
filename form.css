@@ -1,25 +1,36 @@
 body{
     
-    padding-left: 28%;
+    padding-left: 30%;
     color: white;
     font-size: 20px;
+    background-color: #0e0e3d;
+    
    
 }
 
 form{
     width: 50%;
-    height: 100%;
-    padding-top: 70px;
-    padding-left: 50px;
-    border: 2px solid black ;
+    height: 95%;
+    padding-top: 10px;
+    padding-left: 42px;
+    border: 2px solid white ;
+    border-radius: 2%;
     text-align: center;
-    background-color: rgb(12, 12, 129);
+    background-color: rgb(8, 5, 39);
+   
 
 }
 h1{
-    text-decoration: underline;
+    text-decoration: underline ;
 }
 
+h5{
+    font-size: 20px;
+}
+
+a{
+    color: aliceblue;
+}
 
 #submit{
     height: 30px;
