@@ -122,7 +122,6 @@ button{
     margin-top: 23px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .left select{
