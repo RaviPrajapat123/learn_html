@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+body{
+    font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+
+    background-color: rgb(234, 240, 240);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 23px;
+    padding-right: 43px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+
+
+.left-section img{
+    width: 30%;
+}
+
+.left-section #title{
+    font-size: 33px;
+    padding-left: 13px;
+    padding-top: 13px;
+}
+
+.left-section p{
+    font-size: 17px;
+    padding-top: 23px;
+    padding-left: 13px;
+    font-weight: lighter;
+}
+
+input[type="text"]{
+    width: 500px;
+    height: 50px;
+    font-size: larger;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+
+.right-section{
+    padding-top: 80px;
+}
+
+ .forgot-email{
+    text-decoration: none;
+    font-size: small ;
+    font-weight: bold;
+    
+}
+
+.right-section p{
+    font-size: smaller;
+    padding-top: 34px;
+}
+
+span{
+    color: blue;
+    font-size: small;
+}
+
+.btn{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 53px;
+    
+}
+
+button{
+    /* width: 80px;
+    height: 40px; */
+    border: none;
+    border-radius: 50px;
+    padding:  10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    
+}
+
+.create-account{
+    margin-right: 40px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.outside{
+    width: 70%;
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left select{
+    border: none;
+}
+.text{
+    width: auto;
+    display: flex;
+   
+}
+
+.text p{
+    padding-left: 23px;
+}
+
+
