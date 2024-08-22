@@ -55,12 +55,13 @@ body{
 }
 
 input[type="text"]{
-    width: 500px;
+    width: auto;
     height: 50px;
     font-size: larger;
     padding-left: 8px;
     margin-bottom: 10px;
-    
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
