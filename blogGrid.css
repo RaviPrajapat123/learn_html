@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    width: 99vw;
+    /* height: 100vh; */
+    /* border: 2px solid black; */
+    margin-top: 33px;
+}
+
+header{
+    grid-area: header;
+    border-bottom: 2px solid black;
+    /* height: 250px; */
+}
+main{
+    grid-area: main;
+    /* border: 2px solid black; */
+    /* height: 550px; */
+    padding-top: 23px;
+    padding-left: 43px;
+}
+aside{
+    grid-area: aside;
+    /* border: 2px solid black; */
+    width: 85%;
+    /* height: 550px; */
+    margin-left: 42px;
+    padding-left: 23px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    grid-template-areas:
+    "header header header header header" 
+    "main main main aside aside";
+    width: 90%;
+    margin-left: 80px;
+    /* height: 110%; */
+    /* border: 2px solid   black; */
+}
+
+
+.title{
+    margin-top: 35px;
+    margin-left: 30%;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+header>p{
+    margin-left:35%;
+    padding: 30px 0px;
+    font-size:23px;
+}
+
+nav{
+    padding-left: 83px;
+    padding-bottom: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding-left: 57px;
+    text-transform: uppercase;
+}
+
+.heading{
+    text-transform: uppercase;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+.text{
+    font-size: 17px;
+    line-height:180%;
+}
+
+main img{
+    width: 88%;
+    height: 70%;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.wel{
+    font-size: 20px;
+     font-weight: bolder;
+     padding-top: 23px;
+}
+
+.image2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* border-radius: 2px solid black; */
+    border-radius: 50%;
+    /* background-size: cover; */
+}
+
+.dis{
+    font-size: large;
+    padding-bottom: 40px;
+}
+
+.images{
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.images img{
+    width: 50px;
+    height: 50px;
+   
+    border-radius: 50%;
+    
+}
+
+
+
+aside h4{
+    font-size: 20px;
+    padding-bottom:15px;
+}
+
+ul li:nth-child(2){
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+
+span{
+    font-size: 30px;
+}
+
+
+
+
+.bottom{
+    margin-left: 30px;
+    margin-top: 6px;
+
+}
+

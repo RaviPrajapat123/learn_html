@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Layout without Media Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            /* display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "footer";
+            grid-gap: 10px;
+            padding: 10px; */
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #333;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Adjust grid for wider screens */
+        body {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas: 
+                "header header"
+                "nav main"
+                "footer footer";
+                grid-gap: 10px;
+                padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome to My Blog</h2>
+        <p>This is where the blog content will go. You can share your thoughts, ideas, and stories here. The layout adjusts itself automatically without media queries thanks to CSS Grid.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
