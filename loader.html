@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            
+
+             background: conic-gradient( white, rgb(0, 128, 255));
+             
+             /* background: conic-gradient(#fff 90deg,#000 0.25turn 0.5turn,#fff 1rad 1.5rad,#000 300grad); */
+             /* background-size: 25% 25%; */
+
+            animation: loader 3s  ease infinite;
+        }
+        .circle{
+            content:'';
+            position: absolute;
+            top: 0%;
+            left:45%;
+            
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgb(0, 128, 255);
+           
+        }
+         .main::after{
+            content: '';
+            position: absolute;
+            top:15px;
+            left:15px;
+            right:15px;
+            bottom: 15px;
+            border-radius: 50%;
+           background-color: white;
+        }
+        @keyframes loader {
+            0%{
+                rotate: 0deg;
+            }
+            25%{
+                rotate: 90deg;
+            }
+            50%{
+                rotate: 180deg;
+            }
+            75%{
+                rotate: 270deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="circle"></div>
+    </div>
+    
+</body>
+</html>
