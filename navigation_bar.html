@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        ul{
+            width: 25%;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            
+        }
+        ul li{
+           list-style: none;
+           height: 40px;
+           text-align: center;
+        
+        
+            
+        }
+       
+         li a{
+            padding: 8px 16px;
+
+            color: #000;
+            display: block;
+            text-decoration: none;
+            
+        }
+        li a.active{
+            background-color: #04aa6d;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: #555;
+            color: white;
+        }
+        
+        h1,h3,p{
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active"href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+    </ul>
+    <div style="margin-left: 25%;padding: 1px 16px; height: 1000px;">
+        <h1>Fixed full-height side nav</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptate maiores dolore.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium harum omnis adipisci porro delectus tempora explicabo eos perferendis id dolorem repellendus sint cumque nihil iure in dignissimos amet, pariatur beatae?</p>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium harum omnis adipisci porro delectus tempora explicabo eos perferendis id dolorem repellendus sint cumque nihil iure in dignissimos amet, pariatur beatae?</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+        <p>Some text...</p>
+    </div>
+</body>
+</html>

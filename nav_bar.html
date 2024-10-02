@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        nav{
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        .first{
+            display: inline-block;
+           
+        }
+
+         .first a,.dropbtn {
+            display:inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            padding-right: 200px;
+            text-decoration: none;
+            font-size: 23px;
+        }
+        .first a:hover, .dropdown:hover .dropbtn{
+            background-color: red;
+        }
+
+        .dropdown{
+            display: inline-block;
+        }
+        
+        .drop{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+
+        }
+
+        .drop a{
+            display: block;
+            padding: 12px 16px;
+            text-align: left;
+            text-decoration: none;
+            color: black;
+        }
+
+        .drop a:hover{
+            background-color: #f1f1f1;
+        }
+
+    .dropdown:hover .drop{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="first">
+           <a href="#">Home</a>
+           <a href="#">Shop</a>
+           <a href="#">About</a>
+       </div>   
+        <div class="dropdown">
+        <a class="dropbtn" href="#">Dropdown</a> 
+          <div class="drop">
+            <a  href="#">Contact</a>
+            <a  href="#">E- mail</a>
+           </div>     
+               
+        </div>
+    </nav>
+    
+</body>
+</html>

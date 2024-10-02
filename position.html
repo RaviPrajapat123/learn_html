@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 200vh;
+        }
+        .container{
+            width: 70%;
+            height: 300px;
+            margin: auto;
+            margin-top: 100px;
+            border:2px solid black;
+            /* position: relative; */
+            overflow: auto;
+        }
+
+        .item{
+            width: 30%;
+            height: 20%;
+            border:2px solid black
+        }
+
+        .item-1{
+            position: sticky;
+            top: 0px;
+            right: 200px;
+
+            /* position: absolute;
+            left: 23px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+
+        /*method 1 */
+
+        /* .dropdown{
+            position: relative;
+            display: inline-block
+        }
+        .second{
+            display: none;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            padding: 12px 12px;
+            z-index: 1;
+        }
+        .dropdown:hover .second{
+            display: block;
+
+        } */
+
+        /* method 1 end */
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn{
+            background-color: #4caf50;
+            padding: 16px;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+
+        }
+        .dropbtn:hover{
+            background-color: #3e8e41;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0 , 0.2);
+        }
+        .dropdown-content a{
+           display: block;
+           padding: 12px 16px;
+           color: black;
+           text-decoration: none;
+        }
+        a:hover{
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <select name="fruits">
+        <option value="sele">select option</option>
+        <option value="apple">Apple</option>
+        <option value="ban">Banana</option>
+        <option value="Orange" selected>Orange</option>
+    </select> -->
+
+    <!-- method 1 -->
+
+    <!-- <div class="dropdown">
+
+    <img class="first" src="cat.jpg" alt="">
+
+    <img class="second" src="pinkbg.jpg" alt="">
+</div> -->
+
+  <!-- method 1 end -->
+
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+    </div>    
+  </div>
+</body>
+</html>

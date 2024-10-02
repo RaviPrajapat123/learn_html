@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function </title>
+    <style>
+        :root{
+            --bg-color:yellow;
+        }
+        div{
+            height: 100px;
+            width: clamp(150px,50% 300px);
+            background-color: var(--bg-color); 
+            }
+        div::before{
+            content: attr(title);
+        }
+        .item::before{
+            content: attr(data-ti);
+        }
+        .item{
+            color:pink;
+        }
+        :not(p){
+            color: #ff0000;
+        }
+        div:has(+p){
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>some text...</div>
+    <div>some text...</div>
+    <p class="item" data-ti="head"> world</p>
+</body>
+</html>
