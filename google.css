@@ -149,7 +149,7 @@ nav{
     display: flex;
     flex: 1;
     justify-content: space-around;
-    width: 33vw;
+    width: 40vw;
     align-items: center;
     margin-top: 37px;
     border: 1px solid #dfe1e5;
@@ -281,7 +281,7 @@ button:hover{
 
 footer{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     
     position: absolute;
@@ -350,9 +350,50 @@ a:hover{
      svg{
         display: none;
      }
+     
+footer{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    
+    position: absolute;
+    bottom: 0px;
+    background-color:rgb(239, 239, 243);
+    flex-direction: column;
+}
 }
 
 @media screen and (max-width:600px){
+
+    .mid{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        width: 90vw;
+        align-items: center;
+        margin-top: 37px;
+        border: 1px solid #dfe1e5;
+        border-radius: 21px;
+        /* background-color: yellow; */
+        /* padding-left: 15px;
+        padding-right: 15px; */
+    }
+    .mid input{
+        width: 22vw;
+        max-width: 40vw;
+        height: 45px;
+        /* border: transparent; */
+        border-radius: 21px;
+        border: #eee;
+        background-color: transparent;
+        outline: none;
+        /* pointer-events: none; */
+        /* padding-left: 43px;
+        padding-right: 90px; */
+       
+        /* margin-left: 40px; */
+    }
+
     .first ul{
         display: flex;
         width: 100vw;
@@ -366,10 +407,12 @@ a:hover{
     justify-content: space-around;
     align-items: center;
 }
+
+
 footer p{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
