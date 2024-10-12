@@ -433,8 +433,8 @@ footer{
         padding-right: 15px; */
     }
     .mid input{
-        width: 100%;
-        /* max-width: 40vw; */
+        width: 200px;
+        max-width: 90%;
         height: 45px;
         /* border: transparent; */
         border-radius: 21px;
@@ -481,6 +481,12 @@ footer{
     align-items: center;
 }
 
+footer{
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
 .foot{
     /* display: flex; */
     /* flex-wrap: wrap; */
