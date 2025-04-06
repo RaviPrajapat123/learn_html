@@ -1,0 +1,97 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Blog Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .blog-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .blog-card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-card .blog-content {
+      padding: 15px;
+    }
+    .blog-card .blog-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .blog-card .blog-meta {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+    .blog-card .blog-description {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .blog-card a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="blog-container" id="blogContainer"></div>
+
+  <script>
+    // API URL (replace this with your actual API endpoint)
+    const apiURL = 'https://jsonplaceholder.typicode.com/posts';
+
+    // Sample placeholder image (replace with dynamic URLs if your API provides images)
+    const placeholderImage = 'https://via.placeholder.com/300x200';
+
+    // Reference to the container
+    const blogContainer = document.getElementById('blogContainer');
+
+    // Function to fetch and display blogs
+    async function fetchAndDisplayBlogs() {
+      try {
+        const response = await fetch(apiURL);
+        const data = await response.json();
+
+        // Process first 3 blogs for demo (adjust as needed)
+        data.forEach(blog => {
+          const blogCard = document.createElement('div');
+          blogCard.classList.add('blog-card');
+          blogCard.innerHTML = `
+            <img src="${placeholderImage}" alt="Blog Image">
+            <div class="blog-content">
+              <div class="blog-title">${blog.title}</div>
+              <div class="blog-meta">By Author | ${new Date().toDateString()}</div>
+              <div class="blog-description">${blog.body.substring(0, 100)}...</div>
+              <a href="#">Continue Reading</a>
+            </div>
+          `;
+          blogContainer.appendChild(blogCard);
+        });
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+        blogContainer.innerHTML = '<p>Failed to load blogs. Please try again later.</p>';
+      }
+    }
+
+    // Fetch and display blogs on page load
+    fetchAndDisplayBlogs();
+  </script>
+</body>
+</html>

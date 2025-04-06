@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form page</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+    <div class="container">
+   
+        <form action="" method="get" name="user"  onsubmit="logdata()">
+            <h1 style="color: red;">submit form</h1>
+            <div class="input">
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <label>E-mail:</label>
+                <input type="email" name="email" placeholder="enter your email">
+            </div>
+            <div class="input">
+                <label>Number:</label>
+                <input type="number" name="number" placeholder="enter your number">
+            </div>
+            <hr>
+            <div class="input">
+
+                <label>select the graduation:</label><br>
+                <select name="graduation" id="comman" multiple>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="U.G">U.G</option>
+                    <option value="P.G">P.G</option>
+                
+                </select>
+            </div>
+            <div class="sub">
+            <input type="submit" name="Submit" value="Submit" id="submit">
+            </div>
+
+        </form>
+        <button name="dkf" onclick="logdata()">print form</button>
+        <button name="default" onclick="logset()">set default</button>
+    </div>
+    <script>
+       function  logdata(){
+        let prin=document.forms.user;
+        // console.log(prin.name.value)
+        // prin.name.value= prin.name.value ||"hello";
+        console.log(prin.name.value)
+        // prin.email.value= prin.email.value ||"hello";
+        console.log(prin.email.value)
+        // prin.number.value= prin.number.value ||"12233";
+        console.log(prin.number.value);
+        let selettext=[];
+        for(let option of document.getElementById('comman').options)
+       {
+              if(option.selected){
+
+                  selettext.push(option.value);
+              }
+            
+
+
+
+         }
+          console.log(selettext)
+        // let filte=prin.graduation.value;
+        // console.log(prin.graduation.op.value)
+        // filte.forEach(element => 
+        
+        //  console.log(filte=prin.graduation[element].value)
+            
+        
+
+
+       }
+       function  logset(){
+        let prin=document.forms.user;
+        // console.log(prin.name.value)
+        prin.name.value= prin.name.value ||"hello";
+        console.log(prin.name.value)
+        prin.email.value= prin.email.value ||"hello";
+        console.log(prin.email.value)
+        prin.number.value= prin.number.value ||"12233";
+        console.log(prin.number.value)
+        let selettext=[];
+        for(let option of document.getElementById('comman').options)
+       {
+              if(option.selected){
+
+                  selettext.push(option.value);
+              }
+            
+
+
+
+         }
+          console.log(selettext)
+
+       }
+    </script>
+</body>
+</html>
